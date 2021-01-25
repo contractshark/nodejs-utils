@@ -26,7 +26,7 @@ function options(option = {}) {
           repo: "#",
         },
       },
-      mrdoc: {
+      cshark: {
         source: "src/",
         output: "doc/",
         cwd: process.cwd(),
@@ -41,7 +41,7 @@ function options(option = {}) {
 exports.options = options;
 function assign(opt) {
   return {
-    mrdoc: {
+    cshark: {
       source: opt.source || opt.s,
       output: opt.output || opt.o,
       cwd: opt.cwd,

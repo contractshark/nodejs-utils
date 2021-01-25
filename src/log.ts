@@ -31,9 +31,9 @@ export default class Log {
   private event: any;
   /**
    * The namespace of the logger's instance
-   * @param namespace: string = 'mrdoc'
+   * @param namespace: string = 'cshark'
    */
-  constructor(namespace: string = "mrdoc") {
+  constructor(namespace: string = "cshark") {
     this.event = sparkles(namespace);
     Log.levels.forEach((level) => {
       this.event[level] = emitter(level);

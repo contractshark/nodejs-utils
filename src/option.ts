@@ -24,7 +24,7 @@ export interface DocOptions {
       repo: string;
     };
   };
-  mrdoc?: {
+  cshark?: {
     source: string;
     output: string;
     cwd: string;
@@ -57,7 +57,7 @@ export function options(option = {}): DocOptions {
           repo: "#",
         },
       },
-      mrdoc: {
+      cshark: {
         source: "src/",
         output: "doc/",
         cwd: process.cwd(),
@@ -72,7 +72,7 @@ export function options(option = {}): DocOptions {
 
 export function assign(opt: any) {
   return {
-    mrdoc: {
+    cshark: {
       source: opt.source || opt.s,
       output: opt.output || opt.o,
       cwd: opt.cwd,

@@ -27,9 +27,9 @@ const emitter = (level) =>
 class Log {
   /**
    * The namespace of the logger's instance
-   * @param namespace: string = 'mrdoc'
+   * @param namespace: string = 'cshark'
    */
-  constructor(namespace = "mrdoc") {
+  constructor(namespace = "cshark") {
     this.event = sparkles(namespace);
     Log.levels.forEach((level) => {
       this.event[level] = emitter(level);
