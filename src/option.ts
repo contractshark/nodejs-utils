@@ -100,11 +100,11 @@ export function cli() {
       type: "boolean",
       describe: chalk.gray("Print the global version."),
     },
-    mrdocrc: {
+    mrcshark: {
       type: "string",
-      default: Path.join(process.cwd(), ".docrc"),
+      default: Path.join(process.cwd(), ".cshark"),
       describe: chalk.gray(
-        `Set the path to .docrc.
+        `Set the path to .cshark.
         This will set the cwd to the rc's directory as well.`
       ),
     },
