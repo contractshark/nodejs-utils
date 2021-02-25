@@ -3,8 +3,8 @@
 const Util = require("util");
 const chalk = require("chalk");
 const sparkles = require("sparkles");
-import * as _ from "lodash";
 import { EventEmitter } from "events";
+import * as _ from "lodash";
 
 /**
  * Format the messagse
@@ -42,37 +42,37 @@ export default class Log {
   /**
    * Call the debug logger.
    */
-  debug(...args: any[]) {
+  public debug(...args: any[]) {
     this.event.debug(...args);
   }
   /**
    * Call the debug logger.
    */
-  info(...args: any[]) {
+  public info(...args: any[]) {
     this.event.info(...args);
   }
   /**
    * Call the debug logger.
    */
-  warn(...args: any[]) {
+  public warn(...args: any[]) {
     this.event.warn(...args);
   }
   /**
    * Call the debug logger.
    */
-  error(...args: any[]) {
+  public error(...args: any[]) {
     this.event.error(...args);
   }
   /**
    * Catch the event based on log level.
    */
-  on(...args: any[]) {
+  public on(...args: any[]) {
     this.event.on(...args);
   }
   /**
    * Unsubscribe to the current namespace.
    */
-  off() {
+  public off() {
     this.event.remove();
   }
   /**

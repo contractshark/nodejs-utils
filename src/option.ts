@@ -1,9 +1,9 @@
 "use strict";
-import * as Path from "path";
-import * as _ from "lodash";
 import chalk from "chalk";
+import * as _ from "lodash";
+import * as Path from "path";
 
-export interface DocOptions {
+export interface SharkOptions {
   parser: {
     language: string;
   };
@@ -34,7 +34,7 @@ export interface DocOptions {
   };
 }
 
-export function options(option = {}): DocOptions {
+export function options(option = {}): SharkOptions {
   return _.assign(
     {
       parser: {
