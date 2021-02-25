@@ -4,7 +4,7 @@
   "description": "utils",
   "main": "dist/index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "jest"
   },
   "license": "MIT",
   "dependencies": {
